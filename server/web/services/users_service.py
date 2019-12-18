@@ -10,3 +10,8 @@ class Users_service():
         user_ratings = self.user_model.get_user_ratings_by_id(str(user_id))
 
         return user_ratings
+
+    def get_user_engagement(self, user_id):
+        print(user_id)
+        return self.user_model.get_user_engagement_by_id(str(user_id))
+

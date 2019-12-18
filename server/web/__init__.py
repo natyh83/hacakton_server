@@ -14,5 +14,6 @@ def init_app():
 
 
 def add_routes(api, controllers):
-    api.add_resource(controllers['users'], "/api/user/<customer_id>", endpoint="Users_controller")
+    api.add_resource(controllers['Users_ratings'], "/api/user/ratings/<customer_id>", endpoint="Users_ratings_controller")
+    api.add_resource(controllers['Users_scores'], "/api/user/score/<customer_id>", endpoint="Users_scores_controller")
     return api
